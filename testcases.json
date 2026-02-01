@@ -1,18 +1,882 @@
 [
-    {
-      "question": "What is the Adapter design pattern?",
-      "answer": "Convert the interface of a class into another interface clients expect."
-    },
-    {
-      "question": "Define the Adapter pattern.",
-      "answer": "Convert the interface of a class into another interface clients expect."
-    },
-    {
-      "question": "Give a brief definition of Adapter.",
-      "answer": "Convert the interface of a class into another interface clients expect."
-    },
-    {
-      "question": "How would you describe Adapter in one sentence?",
-      "answer": "Convert the interface of a class into another interface clients expect."
-    }
+  {
+    "question": "What is the Abstract Factory design pattern?",
+    "answer": "Provide an interface for creating families of related or dependent objects without specifying their concrete classes."
+  },
+  {
+    "question": "Which category does Abstract Factory belong to?",
+    "answer": "Abstract Factory is a Creational design pattern."
+  },
+  {
+    "question": "What problem does Abstract Factory solve?",
+    "answer": "Clients need to create a set of related objects that must be compatible, but should not depend on concrete classes."
+  },
+  {
+    "question": "Summarize how Abstract Factory works.",
+    "answer": "Introduce an abstract factory that produces a family of products, with concrete factories implementing each family."
+  },
+  {
+    "question": "List the key participants in Abstract Factory.",
+    "answer": "Key participants include: AbstractFactory, ConcreteFactory, AbstractProduct, Client."
+  },
+  {
+    "question": "What is the role of AbstractFactory in Abstract Factory?",
+    "answer": "Declares creation methods for each product in the family."
+  },
+  {
+    "question": "What is the role of ConcreteFactory in Abstract Factory?",
+    "answer": "Implements creation methods to produce a specific product family."
+  },
+  {
+    "question": "What is the role of AbstractProduct in Abstract Factory?",
+    "answer": "Defines the interface for a product in the family."
+  },
+  {
+    "question": "What is the role of Client in Abstract Factory?",
+    "answer": "Uses factories and products through abstract interfaces only."
+  },
+  {
+    "question": "Which Abstract Factory use case matches this description: A cross platform UI toolkit creates matching widgets for each platform.?",
+    "answer": "A cross platform UI toolkit creates matching widgets for each platform."
+  },
+  {
+    "question": "What is the Adapter design pattern?",
+    "answer": "Convert the interface of a class into another interface clients expect."
+  },
+  {
+    "question": "Which category does Adapter belong to?",
+    "answer": "Adapter is a Structural design pattern."
+  },
+  {
+    "question": "What problem does Adapter solve?",
+    "answer": "Existing classes cannot be used because their interfaces do not match what the client requires."
+  },
+  {
+    "question": "Summarize how Adapter works.",
+    "answer": "Wrap the existing class with an adapter that translates calls into the expected interface."
+  },
+  {
+    "question": "List the key participants in Adapter.",
+    "answer": "Key participants include: Target, Adapter, Adaptee, Client."
+  },
+  {
+    "question": "What is the role of Target in Adapter?",
+    "answer": "The interface expected by the client."
+  },
+  {
+    "question": "What is the role of Adapter in Adapter?",
+    "answer": "Translates the target interface to the adaptee interface."
+  },
+  {
+    "question": "What is the role of Adaptee in Adapter?",
+    "answer": "The existing class with an incompatible interface."
+  },
+  {
+    "question": "What is the role of Client in Adapter?",
+    "answer": "Uses the target interface."
+  },
+  {
+    "question": "Which Adapter use case matches this description: Integrating a third party library with a different API.?",
+    "answer": "Integrating a third party library with a different API."
+  },
+  {
+    "question": "What is the Bridge design pattern?",
+    "answer": "Decouple an abstraction from its implementation so the two can vary independently."
+  },
+  {
+    "question": "Which category does Bridge belong to?",
+    "answer": "Bridge is a Structural design pattern."
+  },
+  {
+    "question": "What problem does Bridge solve?",
+    "answer": "A class hierarchy grows in two dimensions, causing a combinatorial explosion of subclasses."
+  },
+  {
+    "question": "Summarize how Bridge works.",
+    "answer": "Split the hierarchy into an abstraction and an implementor and connect them via composition."
+  },
+  {
+    "question": "List the key participants in Bridge.",
+    "answer": "Key participants include: Abstraction, RefinedAbstraction, Implementor, ConcreteImplementor."
+  },
+  {
+    "question": "What is the role of Abstraction in Bridge?",
+    "answer": "Defines the high level interface and holds a reference to an implementor."
+  },
+  {
+    "question": "What is the role of RefinedAbstraction in Bridge?",
+    "answer": "Extends the abstraction with additional features."
+  },
+  {
+    "question": "What is the role of Implementor in Bridge?",
+    "answer": "Defines the interface for implementation classes."
+  },
+  {
+    "question": "What is the role of ConcreteImplementor in Bridge?",
+    "answer": "Provides a specific implementation of the implementor interface."
+  },
+  {
+    "question": "Which Bridge use case matches this description: Supporting multiple platforms for the same abstraction.?",
+    "answer": "Supporting multiple platforms for the same abstraction."
+  },
+  {
+    "question": "What is the Builder design pattern?",
+    "answer": "Separate the construction of a complex object from its representation so the same construction process can create different representations."
+  },
+  {
+    "question": "Which category does Builder belong to?",
+    "answer": "Builder is a Creational design pattern."
+  },
+  {
+    "question": "What problem does Builder solve?",
+    "answer": "Constructing a complex object requires many steps or optional parts that make constructors hard to use."
+  },
+  {
+    "question": "Summarize how Builder works.",
+    "answer": "Use a builder object to assemble the product step by step, optionally directed by a director."
+  },
+  {
+    "question": "List the key participants in Builder.",
+    "answer": "Key participants include: Builder, ConcreteBuilder, Director, Product."
+  },
+  {
+    "question": "What is the role of Builder in Builder?",
+    "answer": "Declares the steps for building parts of the product."
+  },
+  {
+    "question": "What is the role of ConcreteBuilder in Builder?",
+    "answer": "Implements the building steps for a specific representation."
+  },
+  {
+    "question": "What is the role of Director in Builder?",
+    "answer": "Controls the order of building steps."
+  },
+  {
+    "question": "What is the role of Product in Builder?",
+    "answer": "The complex object being built."
+  },
+  {
+    "question": "Which Builder use case matches this description: Constructing objects with many optional parameters.?",
+    "answer": "Constructing objects with many optional parameters."
+  },
+  {
+    "question": "What is the Chain of Responsibility design pattern?",
+    "answer": "Avoid coupling the sender of a request to its receiver by giving multiple objects a chance to handle the request."
+  },
+  {
+    "question": "Which category does Chain of Responsibility belong to?",
+    "answer": "Chain of Responsibility is a Behavioral design pattern."
+  },
+  {
+    "question": "What problem does Chain of Responsibility solve?",
+    "answer": "A request may be handled by one of many handlers and the sender should not know which one."
+  },
+  {
+    "question": "Summarize how Chain of Responsibility works.",
+    "answer": "Link handlers in a chain and pass the request along until one handles it."
+  },
+  {
+    "question": "List the key participants in Chain of Responsibility.",
+    "answer": "Key participants include: Handler, ConcreteHandler, Client, Request."
+  },
+  {
+    "question": "What is the role of Handler in Chain of Responsibility?",
+    "answer": "Defines the interface for handling requests and linking to the next handler."
+  },
+  {
+    "question": "What is the role of ConcreteHandler in Chain of Responsibility?",
+    "answer": "Processes requests it can handle or forwards them."
+  },
+  {
+    "question": "What is the role of Client in Chain of Responsibility?",
+    "answer": "Sends requests to the chain."
+  },
+  {
+    "question": "What is the role of Request in Chain of Responsibility?",
+    "answer": "The object passed through the chain."
+  },
+  {
+    "question": "Which Chain of Responsibility use case matches this description: Event handling in UI frameworks.?",
+    "answer": "Event handling in UI frameworks."
+  },
+  {
+    "question": "What is the Command design pattern?",
+    "answer": "Encapsulate a request as an object, thereby allowing parameterization of clients with different requests and support for undoable operations."
+  },
+  {
+    "question": "Which category does Command belong to?",
+    "answer": "Command is a Behavioral design pattern."
+  },
+  {
+    "question": "What problem does Command solve?",
+    "answer": "A system needs to issue requests without coupling the invoker to the receiver or to support undo and queuing."
+  },
+  {
+    "question": "Summarize how Command works.",
+    "answer": "Create command objects that store the receiver and the action to perform."
+  },
+  {
+    "question": "List the key participants in Command.",
+    "answer": "Key participants include: Command, ConcreteCommand, Receiver, Invoker."
+  },
+  {
+    "question": "What is the role of Command in Command?",
+    "answer": "Declares the interface for executing an operation."
+  },
+  {
+    "question": "What is the role of ConcreteCommand in Command?",
+    "answer": "Binds a receiver to an action."
+  },
+  {
+    "question": "What is the role of Receiver in Command?",
+    "answer": "Performs the actual work."
+  },
+  {
+    "question": "What is the role of Invoker in Command?",
+    "answer": "Holds and triggers commands."
+  },
+  {
+    "question": "Which Command use case matches this description: Implementing undo and redo in editors.?",
+    "answer": "Implementing undo and redo in editors."
+  },
+  {
+    "question": "What is the Composite design pattern?",
+    "answer": "Compose objects into tree structures to represent part whole hierarchies and let clients treat individual objects and compositions uniformly."
+  },
+  {
+    "question": "Which category does Composite belong to?",
+    "answer": "Composite is a Structural design pattern."
+  },
+  {
+    "question": "What problem does Composite solve?",
+    "answer": "Clients need to work with objects and groups of objects in the same way."
+  },
+  {
+    "question": "Summarize how Composite works.",
+    "answer": "Define a component interface implemented by both leaf objects and composite objects that contain children."
+  },
+  {
+    "question": "List the key participants in Composite.",
+    "answer": "Key participants include: Component, Leaf, Composite, Client."
+  },
+  {
+    "question": "What is the role of Component in Composite?",
+    "answer": "Declares the common interface for leaves and composites."
+  },
+  {
+    "question": "What is the role of Leaf in Composite?",
+    "answer": "Represents end objects with no children."
+  },
+  {
+    "question": "What is the role of Composite in Composite?",
+    "answer": "Stores child components and implements child related operations."
+  },
+  {
+    "question": "What is the role of Client in Composite?",
+    "answer": "Uses the component interface uniformly."
+  },
+  {
+    "question": "Which Composite use case matches this description: Representing file system directories and files.?",
+    "answer": "Representing file system directories and files."
+  },
+  {
+    "question": "What is the Decorator design pattern?",
+    "answer": "Attach additional responsibilities to an object dynamically."
+  },
+  {
+    "question": "Which category does Decorator belong to?",
+    "answer": "Decorator is a Structural design pattern."
+  },
+  {
+    "question": "What problem does Decorator solve?",
+    "answer": "Inheritance leads to many subclasses when you need to add behaviors in different combinations."
+  },
+  {
+    "question": "Summarize how Decorator works.",
+    "answer": "Wrap objects with decorator classes that implement the same interface and add behavior."
+  },
+  {
+    "question": "List the key participants in Decorator.",
+    "answer": "Key participants include: Component, ConcreteComponent, Decorator, ConcreteDecorator."
+  },
+  {
+    "question": "What is the role of Component in Decorator?",
+    "answer": "Defines the interface for objects that can be decorated."
+  },
+  {
+    "question": "What is the role of ConcreteComponent in Decorator?",
+    "answer": "The base object that can be wrapped."
+  },
+  {
+    "question": "What is the role of Decorator in Decorator?",
+    "answer": "Holds a reference to a component and implements the same interface."
+  },
+  {
+    "question": "What is the role of ConcreteDecorator in Decorator?",
+    "answer": "Adds responsibilities before or after delegating calls."
+  },
+  {
+    "question": "Which Decorator use case matches this description: Adding logging or metrics around a service.?",
+    "answer": "Adding logging or metrics around a service."
+  },
+  {
+    "question": "What is the Facade design pattern?",
+    "answer": "Provide a unified and simplified interface to a set of interfaces in a subsystem."
+  },
+  {
+    "question": "Which category does Facade belong to?",
+    "answer": "Facade is a Structural design pattern."
+  },
+  {
+    "question": "What problem does Facade solve?",
+    "answer": "Clients need to interact with a complex subsystem that exposes many classes and dependencies."
+  },
+  {
+    "question": "Summarize how Facade works.",
+    "answer": "Create a facade that exposes a simple interface and delegates to subsystem classes."
+  },
+  {
+    "question": "List the key participants in Facade.",
+    "answer": "Key participants include: Facade, SubsystemClass, Client, Adapter."
+  },
+  {
+    "question": "What is the role of Facade in Facade?",
+    "answer": "Provides the simplified interface to the subsystem."
+  },
+  {
+    "question": "What is the role of SubsystemClass in Facade?",
+    "answer": "Implements subsystem functionality used by the facade."
+  },
+  {
+    "question": "What is the role of Client in Facade?",
+    "answer": "Uses the facade instead of direct subsystem access."
+  },
+  {
+    "question": "What is the role of Adapter in Facade?",
+    "answer": "Optional helper that connects facade to subsystem interfaces."
+  },
+  {
+    "question": "Which Facade use case matches this description: Simplifying access to a complex library.?",
+    "answer": "Simplifying access to a complex library."
+  },
+  {
+    "question": "What is the Factory design pattern?",
+    "answer": "Define an interface for creating an object, but let subclasses decide which class to instantiate."
+  },
+  {
+    "question": "Which category does Factory belong to?",
+    "answer": "Factory is a Creational design pattern."
+  },
+  {
+    "question": "What problem does Factory solve?",
+    "answer": "Clients need to create objects without depending on concrete classes, and new product types should be added without editing existing client code."
+  },
+  {
+    "question": "Summarize how Factory works.",
+    "answer": "Move object creation into a factory method on a creator class and let subclasses override it to create specific products."
+  },
+  {
+    "question": "List the key participants in Factory.",
+    "answer": "Key participants include: Creator, ConcreteCreator, Product, ConcreteProduct."
+  },
+  {
+    "question": "What is the role of Creator in Factory?",
+    "answer": "Declares the factory method and may contain core business logic that uses products."
+  },
+  {
+    "question": "What is the role of ConcreteCreator in Factory?",
+    "answer": "Overrides the factory method to return a specific concrete product."
+  },
+  {
+    "question": "What is the role of Product in Factory?",
+    "answer": "Defines the interface of objects the factory method creates."
+  },
+  {
+    "question": "What is the role of ConcreteProduct in Factory?",
+    "answer": "Implements the product interface with a specific variant."
+  },
+  {
+    "question": "Which Factory use case matches this description: A framework needs to create user interface widgets without knowing the concrete widget class.?",
+    "answer": "A framework needs to create user interface widgets without knowing the concrete widget class."
+  },
+  {
+    "question": "What is the Flyweight design pattern?",
+    "answer": "Use sharing to support large numbers of fine grained objects efficiently."
+  },
+  {
+    "question": "Which category does Flyweight belong to?",
+    "answer": "Flyweight is a Structural design pattern."
+  },
+  {
+    "question": "What problem does Flyweight solve?",
+    "answer": "A system needs many similar objects and creating each one separately wastes memory."
+  },
+  {
+    "question": "Summarize how Flyweight works.",
+    "answer": "Separate intrinsic and extrinsic state and share objects with common intrinsic state."
+  },
+  {
+    "question": "List the key participants in Flyweight.",
+    "answer": "Key participants include: Flyweight, ConcreteFlyweight, FlyweightFactory, Client."
+  },
+  {
+    "question": "What is the role of Flyweight in Flyweight?",
+    "answer": "Defines the interface for flyweight objects."
+  },
+  {
+    "question": "What is the role of ConcreteFlyweight in Flyweight?",
+    "answer": "Stores intrinsic state that is shared."
+  },
+  {
+    "question": "What is the role of FlyweightFactory in Flyweight?",
+    "answer": "Creates and manages shared flyweights."
+  },
+  {
+    "question": "What is the role of Client in Flyweight?",
+    "answer": "Stores extrinsic state and uses flyweights."
+  },
+  {
+    "question": "Which Flyweight use case matches this description: Rendering large numbers of characters in a text editor.?",
+    "answer": "Rendering large numbers of characters in a text editor."
+  },
+  {
+    "question": "What is the Interpreter design pattern?",
+    "answer": "Define a representation for a grammar and an interpreter to interpret sentences in the language."
+  },
+  {
+    "question": "Which category does Interpreter belong to?",
+    "answer": "Interpreter is a Behavioral design pattern."
+  },
+  {
+    "question": "What problem does Interpreter solve?",
+    "answer": "You need to evaluate or interpret expressions in a simple language or grammar."
+  },
+  {
+    "question": "Summarize how Interpreter works.",
+    "answer": "Model the grammar as a set of expression classes and interpret expressions using a context."
+  },
+  {
+    "question": "List the key participants in Interpreter.",
+    "answer": "Key participants include: AbstractExpression, TerminalExpression, NonterminalExpression, Context."
+  },
+  {
+    "question": "What is the role of AbstractExpression in Interpreter?",
+    "answer": "Declares an interpret operation."
+  },
+  {
+    "question": "What is the role of TerminalExpression in Interpreter?",
+    "answer": "Implements interpretation for terminal symbols."
+  },
+  {
+    "question": "What is the role of NonterminalExpression in Interpreter?",
+    "answer": "Implements interpretation for nonterminal rules."
+  },
+  {
+    "question": "What is the role of Context in Interpreter?",
+    "answer": "Stores information for interpretation."
+  },
+  {
+    "question": "Which Interpreter use case matches this description: Parsing and evaluating simple expressions.?",
+    "answer": "Parsing and evaluating simple expressions."
+  },
+  {
+    "question": "What is the Mediator design pattern?",
+    "answer": "Define an object that encapsulates how a set of objects interact."
+  },
+  {
+    "question": "Which category does Mediator belong to?",
+    "answer": "Mediator is a Behavioral design pattern."
+  },
+  {
+    "question": "What problem does Mediator solve?",
+    "answer": "Many objects communicate directly and become tightly coupled."
+  },
+  {
+    "question": "Summarize how Mediator works.",
+    "answer": "Introduce a mediator that coordinates communication among colleagues."
+  },
+  {
+    "question": "List the key participants in Mediator.",
+    "answer": "Key participants include: Mediator, ConcreteMediator, Colleague, Client."
+  },
+  {
+    "question": "What is the role of Mediator in Mediator?",
+    "answer": "Defines the interface for communication between colleagues."
+  },
+  {
+    "question": "What is the role of ConcreteMediator in Mediator?",
+    "answer": "Implements the coordination logic."
+  },
+  {
+    "question": "What is the role of Colleague in Mediator?",
+    "answer": "Objects that communicate through the mediator."
+  },
+  {
+    "question": "What is the role of Client in Mediator?",
+    "answer": "Creates the mediator and colleagues."
+  },
+  {
+    "question": "Which Mediator use case matches this description: Chat room systems where users communicate via a server.?",
+    "answer": "Chat room systems where users communicate via a server."
+  },
+  {
+    "question": "What is the Memento design pattern?",
+    "answer": "Capture and externalize an object internal state so the object can be restored to this state later."
+  },
+  {
+    "question": "Which category does Memento belong to?",
+    "answer": "Memento is a Behavioral design pattern."
+  },
+  {
+    "question": "What problem does Memento solve?",
+    "answer": "You need to save and restore object state without exposing its internal structure."
+  },
+  {
+    "question": "Summarize how Memento works.",
+    "answer": "Create a memento object that stores state and let a caretaker manage it."
+  },
+  {
+    "question": "List the key participants in Memento.",
+    "answer": "Key participants include: Originator, Memento, Caretaker, Client."
+  },
+  {
+    "question": "What is the role of Originator in Memento?",
+    "answer": "Creates a memento containing its internal state and restores from it."
+  },
+  {
+    "question": "What is the role of Memento in Memento?",
+    "answer": "Stores the internal state of the originator."
+  },
+  {
+    "question": "What is the role of Caretaker in Memento?",
+    "answer": "Holds and manages mementos without inspecting their contents."
+  },
+  {
+    "question": "What is the role of Client in Memento?",
+    "answer": "Triggers save and restore operations."
+  },
+  {
+    "question": "Which Memento use case matches this description: Implementing undo and redo in editors.?",
+    "answer": "Implementing undo and redo in editors."
+  },
+  {
+    "question": "What is the Observer design pattern?",
+    "answer": "Define a one to many dependency so that when one object changes state, all its dependents are notified and updated automatically."
+  },
+  {
+    "question": "Which category does Observer belong to?",
+    "answer": "Observer is a Behavioral design pattern."
+  },
+  {
+    "question": "What problem does Observer solve?",
+    "answer": "Multiple objects need to stay in sync with the state of another object without tight coupling."
+  },
+  {
+    "question": "Summarize how Observer works.",
+    "answer": "Create a subject that maintains a list of observers and notifies them of changes."
+  },
+  {
+    "question": "List the key participants in Observer.",
+    "answer": "Key participants include: Subject, Observer, ConcreteSubject, ConcreteObserver."
+  },
+  {
+    "question": "What is the role of Subject in Observer?",
+    "answer": "Maintains observers and sends notifications."
+  },
+  {
+    "question": "What is the role of Observer in Observer?",
+    "answer": "Defines an update interface for notifications."
+  },
+  {
+    "question": "What is the role of ConcreteSubject in Observer?",
+    "answer": "Stores state and notifies observers on changes."
+  },
+  {
+    "question": "What is the role of ConcreteObserver in Observer?",
+    "answer": "Implements update behavior in response to changes."
+  },
+  {
+    "question": "Which Observer use case matches this description: Event systems where listeners subscribe to events.?",
+    "answer": "Event systems where listeners subscribe to events."
+  },
+  {
+    "question": "What is the Prototype design pattern?",
+    "answer": "Specify the kinds of objects to create using a prototypical instance and create new objects by copying it."
+  },
+  {
+    "question": "Which category does Prototype belong to?",
+    "answer": "Prototype is a Creational design pattern."
+  },
+  {
+    "question": "What problem does Prototype solve?",
+    "answer": "Creating new instances is expensive or complex, and you need to create many similar objects quickly."
+  },
+  {
+    "question": "Summarize how Prototype works.",
+    "answer": "Clone existing prototype objects instead of instantiating new ones directly."
+  },
+  {
+    "question": "List the key participants in Prototype.",
+    "answer": "Key participants include: Prototype, ConcretePrototype, Client, PrototypeRegistry."
+  },
+  {
+    "question": "What is the role of Prototype in Prototype?",
+    "answer": "Declares the cloning interface."
+  },
+  {
+    "question": "What is the role of ConcretePrototype in Prototype?",
+    "answer": "Implements cloning to copy itself."
+  },
+  {
+    "question": "What is the role of Client in Prototype?",
+    "answer": "Creates new objects by cloning prototypes."
+  },
+  {
+    "question": "What is the role of PrototypeRegistry in Prototype?",
+    "answer": "Stores and provides access to registered prototypes."
+  },
+  {
+    "question": "Which Prototype use case matches this description: Creating complex objects that require costly setup.?",
+    "answer": "Creating complex objects that require costly setup."
+  },
+  {
+    "question": "What is the Proxy design pattern?",
+    "answer": "Provide a surrogate or placeholder for another object to control access to it."
+  },
+  {
+    "question": "Which category does Proxy belong to?",
+    "answer": "Proxy is a Structural design pattern."
+  },
+  {
+    "question": "What problem does Proxy solve?",
+    "answer": "Direct access to an object is expensive, remote, or should be controlled."
+  },
+  {
+    "question": "Summarize how Proxy works.",
+    "answer": "Create a proxy with the same interface that manages access to the real subject."
+  },
+  {
+    "question": "List the key participants in Proxy.",
+    "answer": "Key participants include: Subject, RealSubject, Proxy, Client."
+  },
+  {
+    "question": "What is the role of Subject in Proxy?",
+    "answer": "Defines the common interface for real subject and proxy."
+  },
+  {
+    "question": "What is the role of RealSubject in Proxy?",
+    "answer": "The real object that performs work."
+  },
+  {
+    "question": "What is the role of Proxy in Proxy?",
+    "answer": "Controls access to the real subject."
+  },
+  {
+    "question": "What is the role of Client in Proxy?",
+    "answer": "Uses the subject interface and may interact with the proxy."
+  },
+  {
+    "question": "Which Proxy use case matches this description: Lazy loading of expensive objects.?",
+    "answer": "Lazy loading of expensive objects."
+  },
+  {
+    "question": "What is the Singleton design pattern?",
+    "answer": "Ensure a class has only one instance and provide a global access point to it."
+  },
+  {
+    "question": "Which category does Singleton belong to?",
+    "answer": "Singleton is a Creational design pattern."
+  },
+  {
+    "question": "What problem does Singleton solve?",
+    "answer": "Some resources must be shared globally, but multiple instances would cause conflicts or waste."
+  },
+  {
+    "question": "Summarize how Singleton works.",
+    "answer": "Hide the constructor and expose a static access method that returns the single instance."
+  },
+  {
+    "question": "List the key participants in Singleton.",
+    "answer": "Key participants include: Singleton, Client, Instance, AccessMethod."
+  },
+  {
+    "question": "What is the role of Singleton in Singleton?",
+    "answer": "The class that manages its single instance and provides global access."
+  },
+  {
+    "question": "What is the role of Client in Singleton?",
+    "answer": "Accesses the singleton instance through the static method."
+  },
+  {
+    "question": "What is the role of Instance in Singleton?",
+    "answer": "The single object created and reused across the application."
+  },
+  {
+    "question": "What is the role of AccessMethod in Singleton?",
+    "answer": "The static method used to get the singleton instance."
+  },
+  {
+    "question": "Which Singleton use case matches this description: A configuration manager that must be shared across the application.?",
+    "answer": "A configuration manager that must be shared across the application."
+  },
+  {
+    "question": "What is the State design pattern?",
+    "answer": "Allow an object to alter its behavior when its internal state changes."
+  },
+  {
+    "question": "Which category does State belong to?",
+    "answer": "State is a Behavioral design pattern."
+  },
+  {
+    "question": "What problem does State solve?",
+    "answer": "Complex state dependent behavior is implemented with large conditional statements."
+  },
+  {
+    "question": "Summarize how State works.",
+    "answer": "Encapsulate state specific behavior into separate state classes and delegate behavior to the current state."
+  },
+  {
+    "question": "List the key participants in State.",
+    "answer": "Key participants include: Context, State, ConcreteState, Client."
+  },
+  {
+    "question": "What is the role of Context in State?",
+    "answer": "Maintains a reference to the current state."
+  },
+  {
+    "question": "What is the role of State in State?",
+    "answer": "Defines an interface for state specific behavior."
+  },
+  {
+    "question": "What is the role of ConcreteState in State?",
+    "answer": "Implements behavior for a specific state."
+  },
+  {
+    "question": "What is the role of Client in State?",
+    "answer": "Uses the context without knowing concrete states."
+  },
+  {
+    "question": "Which State use case matches this description: Workflow systems with multiple states.?",
+    "answer": "Workflow systems with multiple states."
+  },
+  {
+    "question": "What is the Strategy design pattern?",
+    "answer": "Define a family of algorithms, encapsulate each one, and make them interchangeable."
+  },
+  {
+    "question": "Which category does Strategy belong to?",
+    "answer": "Strategy is a Behavioral design pattern."
+  },
+  {
+    "question": "What problem does Strategy solve?",
+    "answer": "Clients need to choose between multiple algorithms without hardcoding them."
+  },
+  {
+    "question": "Summarize how Strategy works.",
+    "answer": "Define a strategy interface and provide concrete strategy implementations that the context can switch at runtime."
+  },
+  {
+    "question": "List the key participants in Strategy.",
+    "answer": "Key participants include: Strategy, ConcreteStrategy, Context, Client."
+  },
+  {
+    "question": "What is the role of Strategy in Strategy?",
+    "answer": "Declares a common interface for algorithms."
+  },
+  {
+    "question": "What is the role of ConcreteStrategy in Strategy?",
+    "answer": "Implements a specific algorithm."
+  },
+  {
+    "question": "What is the role of Context in Strategy?",
+    "answer": "Uses a strategy to perform its work."
+  },
+  {
+    "question": "What is the role of Client in Strategy?",
+    "answer": "Chooses the appropriate strategy."
+  },
+  {
+    "question": "Which Strategy use case matches this description: Sorting data with different sorting algorithms.?",
+    "answer": "Sorting data with different sorting algorithms."
+  },
+  {
+    "question": "What is the Template Method design pattern?",
+    "answer": "Define the skeleton of an algorithm in an operation, deferring some steps to subclasses."
+  },
+  {
+    "question": "Which category does Template Method belong to?",
+    "answer": "Template Method is a Behavioral design pattern."
+  },
+  {
+    "question": "What problem does Template Method solve?",
+    "answer": "Several classes share the same algorithm structure but differ in certain steps."
+  },
+  {
+    "question": "Summarize how Template Method works.",
+    "answer": "Implement the invariant parts of the algorithm in a base class and let subclasses override specific steps."
+  },
+  {
+    "question": "List the key participants in Template Method.",
+    "answer": "Key participants include: AbstractClass, ConcreteClass, TemplateMethod, Client."
+  },
+  {
+    "question": "What is the role of AbstractClass in Template Method?",
+    "answer": "Defines the template method and abstract steps."
+  },
+  {
+    "question": "What is the role of ConcreteClass in Template Method?",
+    "answer": "Implements the primitive steps of the algorithm."
+  },
+  {
+    "question": "What is the role of TemplateMethod in Template Method?",
+    "answer": "The method that defines the algorithm skeleton."
+  },
+  {
+    "question": "What is the role of Client in Template Method?",
+    "answer": "Uses the abstract class interface."
+  },
+  {
+    "question": "Which Template Method use case matches this description: Frameworks defining algorithm skeletons with hooks.?",
+    "answer": "Frameworks defining algorithm skeletons with hooks."
+  },
+  {
+    "question": "What is the Visitor design pattern?",
+    "answer": "Represent an operation to be performed on elements of an object structure without changing their classes."
+  },
+  {
+    "question": "Which category does Visitor belong to?",
+    "answer": "Visitor is a Behavioral design pattern."
+  },
+  {
+    "question": "What problem does Visitor solve?",
+    "answer": "You need to add new operations to object structures without modifying element classes."
+  },
+  {
+    "question": "Summarize how Visitor works.",
+    "answer": "Create visitor objects that implement operations and let elements accept visitors."
+  },
+  {
+    "question": "List the key participants in Visitor.",
+    "answer": "Key participants include: Visitor, ConcreteVisitor, Element, ObjectStructure."
+  },
+  {
+    "question": "What is the role of Visitor in Visitor?",
+    "answer": "Declares visit operations for each element type."
+  },
+  {
+    "question": "What is the role of ConcreteVisitor in Visitor?",
+    "answer": "Implements operations for each element type."
+  },
+  {
+    "question": "What is the role of Element in Visitor?",
+    "answer": "Declares an accept method for visitors."
+  },
+  {
+    "question": "What is the role of ObjectStructure in Visitor?",
+    "answer": "Holds elements and allows visitor traversal."
+  },
+  {
+    "question": "Which Visitor use case matches this description: Performing multiple operations on an AST.?",
+    "answer": "Performing multiple operations on an AST."
+  }
 ]
