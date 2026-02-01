@@ -1,0 +1,18 @@
+[
+    {
+      "question": "What is the Adapter design pattern?",
+      "answer": "Convert the interface of a class into another interface clients expect."
+    },
+    {
+      "question": "Define the Adapter pattern.",
+      "answer": "Convert the interface of a class into another interface clients expect."
+    },
+    {
+      "question": "Give a brief definition of Adapter.",
+      "answer": "Convert the interface of a class into another interface clients expect."
+    },
+    {
+      "question": "How would you describe Adapter in one sentence?",
+      "answer": "Convert the interface of a class into another interface clients expect."
+    }
+]
